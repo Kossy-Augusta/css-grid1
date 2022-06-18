@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Grid project</title>
+ <link rel="stylesheet" href="style.css">
+ <style>
+  .container{
+   display: grid;
+
+   grid-template-columns: repeat(6,1fr);
+   grid-template-rows: repeat(4,100px);
+   gap: 1rem 1rem;
+   grid-template-areas:
+   "a a a a b b"
+   "a a a a b b"
+   "c c c d d d"
+   "c c c e e e"
+   ;
+  }
+  .box-1{
+   grid-area: a;
+  }
+  .box-2{
+   grid-area: b;
+  }
+  .box-3{
+   grid-area: c;
+  }
+  .box-4{
+   grid-area: d;
+  }
+  .box-5{
+   grid-area: e;
+  }
+ </style>
+</head>
+<body>
+ <main class="container">
+  <!-- single tile -->
+  <div class="box box-1"></div>
+  <div class="box box-2"></div>
+  <div class="box box-3"></div>
+  <div class="box box-4"></div>
+  <div class="box box-5"></div>
+  <!-- end of single tile -->
+ </main>
+ 
+</body>
+</html>
